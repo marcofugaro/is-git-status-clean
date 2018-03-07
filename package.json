@@ -1,0 +1,30 @@
+{
+	"name": "is-git-status-clean",
+	"version": "0.0.0",
+	"description": "Check if the git working directory is clean",
+	"license": "MIT",
+	"repository": "marcofugaro/is-git-status-clean",
+	"author": {
+		"name": "Marco Fugaro",
+		"email": "marco.fugaro@gmail.com",
+		"url": "marcofugaro.it"
+	},
+	"bin": "cli.js",
+	"engines": {
+		"node": ">=4"
+	},
+	"files": [
+		"index.js",
+		"cli.js"
+	],
+	"keywords": [
+		"git",
+		"status",
+		"working",
+		"directory",
+		"clean"
+	],
+	"dependencies": {
+		"meow": "^3.7.0"
+	}
+}
