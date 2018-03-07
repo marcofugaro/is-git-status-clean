@@ -10,6 +10,9 @@
 		"url": "marcofugaro.it"
 	},
 	"bin": "cli.js",
+	"scripts": {
+		"test": "echo No test specified"
+	},
 	"engines": {
 		"node": ">=4"
 	},
