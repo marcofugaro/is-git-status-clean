@@ -3,6 +3,7 @@
 const cp = require('child_process')
 const meow = require('meow')
 const chalk = require('chalk')
+const indentString = require('indent-string')
 const isGitStatusClean = require('.')
 
 const cli = meow(`
@@ -15,8 +16,11 @@ const cli = meow(`
 
 
 if (!isGitStatusClean()) {
+	const gitStatus = cp.execSync('git status --porcelain').toString()
+
   console.log(chalk.red('Exiting because `git status` is not empty:'))
   console.log()
-	cp.execSync('git status')
+	console.log(indentString(chalk.dim(gitStatus), 2))
+	console.log()
   process.exit(1)
 }

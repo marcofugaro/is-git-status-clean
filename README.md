@@ -36,13 +36,13 @@ You can use `is-git-status-clean` from your npm scripts to prevent a publish if 
 
 In your package.json:
 ```
-	"scripts": {
-  	"deploy":  "is-git-status-clean && [command]",
+"scripts": {
+	"deploy":  "is-git-status-clean && [command]",
 ```
 or even
 ```
-	"scripts": {
-  	"prepublish":  "is-git-status-clean",
+"scripts": {
+	"prepublish":  "is-git-status-clean",
 ```
 
 
